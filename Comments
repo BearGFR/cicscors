@@ -1,0 +1,17 @@
+I couldn't figure out how to leave a comment on github so I'm doing this instead.
+
+I agree adding this support is important, especially if CICS is going to (continue to) become a major player in the world of web
+services and API's.
+
+I suggest:
+Adding this support to the configuration options for a web service, but only if said web service is configured and deployed
+into CICS using the 'bundle' format that makes use of XML.
+I say this because I imagine that the idea of adding this support via traditional means (CSD/BAS and all the trappings thereof)
+will not be appealing to the IBM folk who are charged with delivering it (thus it will take a long time to do).  I similarly
+would not be a fan of a URM based approach because that means some "U" has to be responsible for creating and subsequently
+maintaining the "RM".  Our shop is actively discouraging such activity and is engaged in trying to get rid of custom code
+at present.
+Making the support available only via bundles I'm thinking would allow IBM to deploy all the trappings of these artifacts via
+XML and might also be able to make use of the existing support for Liberty JVMS's.  Also since direct modification of XML
+based artifacts is not supported / discouraged all of the associated trappings of a CSD/BAS approach (doc, CSD changes, DFHCSDUP
+changes, CED* changes) could be avoided.
